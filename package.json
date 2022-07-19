@@ -1,0 +1,19 @@
+{
+  "name": "cypress-issue-22825-multiple-cy-run",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "ci": "node cypress-ci.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.12.0",
+    "cypress": "^10.3.0",
+    "svelte": "^3.49.0",
+    "svelte-loader": "^3.1.3",
+    "unfetch": "^4.2.0"
+  }
+}

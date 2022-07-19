@@ -1,0 +1,184 @@
+> cypress-issue-22825-multiple-cy-run@1.0.0 ci
+> node cypress-ci.js
+
+
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: http://127.0.0.1:4001/
+<i> [webpack-dev-server] Content not from webpack is served from 'C:\dev\cypress-issue-22825-multiple-cy-run\public' directory
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        10.3.0                                                                         │
+  │ Browser:        Chrome 103 (headless)                                                          │
+  │ Node Version:   v16.14.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          1 found (MyComponent.spec.js)                                                  │
+  │ Searched:       C:\dev\cypress-issue-22825-multiple-cy-run\src\MyComponent.spec.js             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  MyComponent.spec.js                                                             (1 of 1)
+5 assets
+41 modules
+webpack 5.73.0 compiled successfully in 598 ms
+YYYAAARRR:  TypeError: Cannot read properties of null (reading 'token')
+    at Object.getFileServerToken (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\server\lib\server-base.js:215:37)
+    at Object.SendRequestOutgoing (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:150:60)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.MaybeSetBasicAuthHeaders (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:136:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.StripUnsupportedAcceptEncoding (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:122:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.EndRequestsToBlockedHosts (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:109:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.RedirectToClientRouteIfUnloaded (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:96:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.InterceptRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\net-stubbing\lib\server\middleware\request.js:43:21)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.SendToDriver (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:78:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.callback (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:70:14)
+    at PreRequests.addPending (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\util\prerequests.js:56:39)
+    at Http.addPendingBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:231:26)
+    at NetworkProxy.addPendingBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\network-proxy.js:10:19)
+    at ServerCt.addBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\server\lib\server-base.js:252:27)
+    at Automation.onBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\server\lib\project-base.js:245:25)
+    at Chrome.CdpAutomation.onNetworkRequestWillBeSent (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\server\lib\browsers\cdp_automation.js:170:103)
+    at Chrome.emit (node:events:390:28)
+    at Chrome.emit (node:domain:475:12)
+    at Chrome._handleMessage (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\lib\chrome.js:272:18)
+    at WebSocket.<anonymous> (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\lib\chrome.js:235:22)
+    at WebSocket.emit (node:events:390:28)
+    at WebSocket.emit (node:domain:475:12)
+    at Receiver.receiverOnMessage (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\websocket.js:1047:20)
+    at Receiver.emit (node:events:390:28)
+    at Receiver.emit (node:domain:475:12)
+    at Receiver.dataMessage (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\receiver.js:517:14)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\receiver.js:468:23
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\permessage-deflate.js:308:9
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\permessage-deflate.js:391:7
+    at afterWrite (node:internal/streams/writable:497:5)
+    at onwrite (node:internal/streams/writable:477:7)
+    at Zlib.cb (node:internal/streams/transform:201:7)
+    at Zlib.processCallback (node:zlib:612:8)
+
+YYYAAARRR2:  {}
+Error running proxy middleware: Cannot call this.next() more than once in the same middleware function. Doing so can cause unintended issues.
+Error: Error running proxy middleware: Cannot call this.next() more than once in the same middleware function. Doing so can cause unintended issues.
+    at Object.fullCtx.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:78:31)
+    at Object.callback (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:70:14)
+    at PreRequests.addPending (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\util\prerequests.js:56:39)
+    at Http.addPendingBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:231:26)
+    at onError (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:200:22)
+    at Object.onError (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:95:21)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:109:25
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.MaybeSetBasicAuthHeaders (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:136:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.StripUnsupportedAcceptEncoding (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:122:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.EndRequestsToBlockedHosts (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:109:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.RedirectToClientRouteIfUnloaded (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:96:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.InterceptRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\net-stubbing\lib\server\middleware\request.js:43:21)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.SendToDriver (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:78:10)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:104:28
+    at Promise._execute (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\debuggability.js:313:9)
+    at Promise._resolveFromExecutor (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:483:18)
+    at new Promise (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:79:10)
+    at runMiddlewareStack (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:52:16)
+    at Object.next (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:81:26)
+    at Object.callback (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\request-middleware.js:70:14)
+    at PreRequests.addPending (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\util\prerequests.js:56:39)
+    at Http.addPendingBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\http\index.js:231:26)
+    at NetworkProxy.addPendingBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\proxy\lib\network-proxy.js:10:19)
+    at ServerCt.addBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\server\lib\server-base.js:252:27)
+    at Automation.onBrowserPreRequest (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\server\lib\project-base.js:245:25)
+    at Chrome.CdpAutomation.onNetworkRequestWillBeSent (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\packages\server\lib\browsers\cdp_automation.js:170:103)
+    at Chrome.emit (node:events:390:28)
+    at Chrome.emit (node:domain:475:12)
+    at Chrome._handleMessage (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\lib\chrome.js:272:18)
+    at WebSocket.<anonymous> (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\lib\chrome.js:235:22)
+    at WebSocket.emit (node:events:390:28)
+    at WebSocket.emit (node:domain:475:12)
+    at Receiver.receiverOnMessage (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\websocket.js:1047:20)
+    at Receiver.emit (node:events:390:28)
+    at Receiver.emit (node:domain:475:12)
+    at Receiver.dataMessage (C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\receiver.js:517:14)
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\receiver.js:468:23
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\permessage-deflate.js:308:9
+    at C:\Users\john\AppData\Local\Cypress\Cache\10.3.0\Cypress\resources\app\node_modules\chrome-remote-interface\node_modules\ws\lib\permessage-deflate.js:391:7
+    at afterWrite (node:internal/streams/writable:497:5)
+    at onwrite (node:internal/streams/writable:477:7)
+    at Zlib.cb (node:internal/streams/transform:201:7)
+    at Zlib.processCallback (node:zlib:612:8)
